@@ -2,7 +2,10 @@ package com.ProFase1.ProjetoIntegrador;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-@Controller
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
 public class indexController {
     @GetMapping("/teste")
     public String index(){
