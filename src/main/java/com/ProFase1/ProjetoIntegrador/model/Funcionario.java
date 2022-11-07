@@ -1,6 +1,14 @@
 package com.ProFase1.ProjetoIntegrador.model;
 
+import javax.persistence.*;
+
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "funcionario")
 public class Funcionario {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private  long id;
     private String nomeFuncionario;
     private int codigo;
     private String email;
@@ -8,7 +16,16 @@ public class Funcionario {
     private char genero;
     private String usuario;
     private String senha;
+    @ManyToOne
     private Empresa empresa;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getNomeFuncionario() {
         return nomeFuncionario;

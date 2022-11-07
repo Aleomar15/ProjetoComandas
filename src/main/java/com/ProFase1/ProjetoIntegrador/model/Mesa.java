@@ -1,9 +1,14 @@
 package com.ProFase1.ProjetoIntegrador.model;
 
+import javax.persistence.*;
 import java.util.List;
+@Entity
 
 public class Mesa {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int num_mesa;
+    @OneToMany
     private List<Pedidos> pedidos;
 
     public int getNum_mesa() {

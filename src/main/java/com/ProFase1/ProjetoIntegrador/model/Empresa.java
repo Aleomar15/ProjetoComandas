@@ -1,14 +1,27 @@
 package com.ProFase1.ProjetoIntegrador.model;
 
+import javax.persistence.*;
 import java.util.Set;
-
+@Entity
 public class Empresa {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String nomeFantasia;
     private String nomeProprietario;
     private String cnpj;
     private String emailEmpresa;
     private String senha;
+    @OneToMany
     private Set <Funcionario> funcionarios;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getNomeFantasia() {
         return nomeFantasia;

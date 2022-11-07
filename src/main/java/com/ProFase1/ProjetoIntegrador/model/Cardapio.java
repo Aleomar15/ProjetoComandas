@@ -1,11 +1,17 @@
 package com.ProFase1.ProjetoIntegrador.model;
 
+import javax.persistence.*;
 import java.util.Set;
-
+@Entity
 public class Cardapio {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private  String prod_cardapio;
+    @OneToMany
     private Set<ItensCardapio> itensCardapios;
-    private Gerente gerente;
+
+
 
     public String getProd_cardapio() {
         return prod_cardapio;
@@ -23,13 +29,7 @@ public class Cardapio {
         this.itensCardapios = itensCardapios;
     }
 
-    public Gerente getGerente() {
-        return gerente;
-    }
 
-    public void setGerente(Gerente gerente) {
-        this.gerente = gerente;
-    }
 
 
 }

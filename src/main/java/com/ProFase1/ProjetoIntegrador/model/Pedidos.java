@@ -1,17 +1,24 @@
 package com.ProFase1.ProjetoIntegrador.model;
 
+import javax.persistence.*;
 import java.sql.Time;
 import java.util.Calendar;
 import java.util.List;
+@Entity
 
 public class Pedidos {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_pedido;
     private boolean disp;
     private Calendar data;
     private Time horario_ini;
     private Time horario_fim;
+    @OneToMany
     private List<ItensPedido> itensPedidos;
+    @ManyToOne
     private Mesa mesa;
+    @ManyToOne
     private Garcon garcon;
 
     public int getId_pedido() {
