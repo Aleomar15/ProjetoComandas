@@ -14,6 +14,9 @@ public class Empresa {
     private String senha;
     @OneToMany
     private Set <Funcionario> funcionarios;
+    @OneToMany
+    private Set<Mesa> mesa;
+
 
     public long getId() {
         return id;
