@@ -22,7 +22,7 @@ html,body{
 
 header{
     background-color: #690d0d;
-    padding: 10px 2%;
+    padding: 10px 2% 30px 2%;
     
 }
 
@@ -59,12 +59,14 @@ header{
     float: right;
     margin-right: 50px;
     width: 400px;
-    height: 100%;
+    position: relative;
+    top: -5%;
+    height: 110%;
     
 }
 
 .form-container h2{
-    padding: 15px;
+    padding: 20px 15px;
     text-align: center;
     color: black;
     font-size: 18px;
