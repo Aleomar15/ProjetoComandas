@@ -76,17 +76,49 @@ header{
 
 .form-container form{
     margin-top: 8px;
+    padding: 30px;
 }
 
 .form-container form p{
-    font-size: 13px;
+    font-size: 14px;
     color: #525252;
 }
 
-.form-container form input{
+.form-container form input[type=text]{
     width: 100%;
-    border: 1px solid #ccc;
-    height: 30px;
+    border: 3px solid red;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.form-container form input[type=password]{
+    width: 100%;
+    border: 3px solid red;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.form-container form input[type=submit]{
+    text-transform: uppercase;
+    background-color: #b61616;
+    color: black;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 510px){
