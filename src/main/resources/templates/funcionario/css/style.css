@@ -74,6 +74,21 @@ header{
     background-color: #c10b0b;
 }
 
+.form-container form{
+    margin-top: 8px;
+}
+
+.form-container form p{
+    font-size: 13px;
+    color: #525252;
+}
+
+.form-container form input{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
 @media screen and (max-width: 510px){
 
     header{
