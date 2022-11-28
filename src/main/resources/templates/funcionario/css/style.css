@@ -7,6 +7,7 @@
 
 html,body{
     height: 100%;
+    background-color: antiquewhite
 }
 
 .container{
@@ -39,6 +40,36 @@ header{
     text-align: center;
     color: aliceblue;
     
+}
+
+.cover-form{
+    width: 100%;
+    padding: 0 2%;
+}
+
+.bg{
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/bg.svg);
+}
+
+.form-container{
+    background-color: antiquewhite;
+    float: right;
+    margin-right: 50px;
+    width: 400px;
+    height: 100%;
+    
+}
+
+.form-container h2{
+    padding: 15px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    background-color: #c10b0b;
 }
 
 @media screen and (max-width: 510px){
