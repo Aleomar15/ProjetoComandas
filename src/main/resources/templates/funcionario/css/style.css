@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: #690d0d;
+    padding: 10px 0;
+    
+}
+
+.logo-1{
+    float: left;
+    width: 100px;
+    height: 70px;
+    background-color: black;
+    background-image: url("../assets/Gerald-G-Fast-Food-Lunch-Dinner-FF-Menu-1.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
