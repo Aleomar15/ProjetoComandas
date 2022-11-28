@@ -30,7 +30,7 @@ header{
     float: left;
     width: 100px;
     height: 70px;
-    background-color: black;
+    background-color: none;
     background-image: url("../assets/Gerald-G-Fast-Food-Lunch-Dinner-FF-Menu-1.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -39,6 +39,7 @@ header{
     padding: 19px;
     text-align: center;
     color: aliceblue;
+    font-size: large;
     
 }
 
@@ -62,11 +63,12 @@ header{
     position: relative;
     top: -5%;
     height: 110%;
+    box-shadow: 1px 1px 2px 1px rgb(0, 0, 0);
     
 }
 
 .form-container h2{
-    padding: 20px 15px;
+    padding: 25px 15px;
     text-align: center;
     color: black;
     font-size: 18px;
