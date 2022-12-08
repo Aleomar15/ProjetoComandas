@@ -114,10 +114,27 @@ body{
         &-btn{
             padding: .6rem 2rem;
             border: 2px solid antiquewhite;
-            color: black;
+            color: antiquewhite;
             font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 1px;
+            &:hover{
+                background-color: antiquewhite;
+                color: black;
+            }
+
+
         }
+
+        
+    }
+
+    #card-1{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        transition: .6s;
+        
     }
 }
